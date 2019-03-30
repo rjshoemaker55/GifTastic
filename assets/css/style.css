@@ -1,19 +1,7 @@
-html, body {
-  height: 100%
-}
 
 body {
   font-family: Consolas,monaco,monospace;
   background: whitesmoke;
-}
-
-#wrap {
-  min-height: 100%
-}
-
-#main {
-  overflow: auto;
-  padding-bottom: 20px;
 }
 
 h1 {
@@ -72,4 +60,8 @@ footer {
 .card {
   float: left;
   margin: 5px;
+}
+
+.radios {
+  margin-right: 5px;
 }
