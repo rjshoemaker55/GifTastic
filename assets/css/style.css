@@ -1,0 +1,44 @@
+body {
+  font-family: Consolas,monaco,monospace;
+  background: whitesmoke;
+}
+
+h1 {
+  background: #ffec88;
+  color: #7a787a;
+  padding: 25px;
+}
+
+#instructions {
+  color: #7a787a;
+}
+
+#buttons-and-form {
+  margin-top: 25px;
+}
+
+#images-row {
+  margin-top: 25px;
+}
+
+.btn-primary {
+  padding: 4px 10px;
+  margin:  5px;
+  border-radius: 3px;
+  font-weight: bold;
+  letter-spacing: 3px;;
+  background: #4ed4da;
+  border: none;
+  color: darkslategray;
+}
+
+.input-group {
+  border: 1px #ccc solid;
+}
+
+footer {
+  background: #777474;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-12 text-center">
+
+        <h1>gif finder</h1>
+
+        <p id="instructions">click on a topic to retrieve ten gifs! add a topic using the form on the right. click a
+          gif to animate!</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container" id="buttons-and-form">
+
+    <div class="row">
+
+      <div class="col-sm-12 col-med-8 col-lg-8">
+
+        <div id="buttons-div" class="btn-group flex-wrap" data-toggle="buttons"></div>
+
+      </div>
+
+
+
+
+      <div class="col-sm-12 col-med-4 col-lg-4">
+
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" id="topic-input" placeholder="add topic" aria-label="add topic"
+            aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" id="topic-input-button" type="button">submit</button>
+          </div>
+        </div>
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="assets/javascript/app.js" async defer></script>
+
+      </div>
+
+    </div>
+
+    <div class="row" id="images-row">
+
+      <div class="col-12">
+
+        <div id="images-div"></div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <footer class="footer-position">
+          <p id="footer-para">made by rj shoemaker</p>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>
