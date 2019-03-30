@@ -34,18 +34,20 @@ $(document.body).on("click", ".buttons", function() {
     for (var i = 0; i <= 9; i++) {
       console.log(response.data[i].embed_url)
       var imageURL = (response.data[i].images.fixed_height_still.url)
-      var image = $("<img>").attr("id", "img-" + i)
-      image.attr("src", imageURL)
+      var rating = response.data[i].rating.toUpperCase();
 
 
 
-      var card = $("<div>").addClass("card")
-      $(card).html(
-     " <img class=&quot;card-img-top&quot; src=&quot;" + imageURL + "alt=&quot;Card image cap&quot;>"
-     " <div class=&quot;card-body&quot;>"
-       " <p class=&quot;card-text&quot;>Some quick example text to build on the card title and make up the bulk of the card's content.</p>"
-     " </div>"
-      )
+      var card = $("<div>").addClass("card").attr("id", "img-" + i)
+
+      $(card).html(`
+        <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="${imageURL}" alt="Card image cap">
+        <div class="card-body">
+        <p class="card-text">Rating: ${rating}</p>
+        </div>
+        </div>
+     ` )
 
       $("#images-div").append(card)
 
@@ -65,5 +67,6 @@ $("#topic-input-button").on("click", function() {
   createButtons();
 
 })
+
 
 createButtons();

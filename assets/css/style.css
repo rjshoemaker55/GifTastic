@@ -1,6 +1,19 @@
+html, body {
+  height: 100%
+}
+
 body {
   font-family: Consolas,monaco,monospace;
   background: whitesmoke;
+}
+
+#wrap {
+  min-height: 100%
+}
+
+#main {
+  overflow: auto;
+  padding-bottom: 20px;
 }
 
 h1 {
@@ -19,6 +32,7 @@ h1 {
 
 #images-row {
   margin-top: 25px;
+  margin-bottom: 60px;
 }
 
 .btn-primary {
@@ -41,4 +55,21 @@ footer {
   color: white;
   text-align: center;
   padding: 5px;
+}
+
+#footer-container {
+  bottom: 0px;
+  position: fixed;
+  bottom: 0;
+  clear: both;
+  padding-top: 30px;
+}
+
+.card-text {
+  font-weight: bold;
+}
+
+.card {
+  float: left;
+  margin: 5px;
 }
