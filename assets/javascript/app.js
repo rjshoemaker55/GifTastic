@@ -27,7 +27,7 @@ $(document.body).on("click", ".buttons", function () {
 
 
   $.ajax({
-    url: "http://api.giphy.com/v1/gifs/search?q=" + topicquery + "s&api_key=jSen6BwZSc0sDdHUgWPLxzXznD853orJ&limit=10",
+    url: "https://api.giphy.com/v1/gifs/search?q=" + topicquery + "s&api_key=jSen6BwZSc0sDdHUgWPLxzXznD853orJ&limit=10",
     method: "GET"
   }).then(function (response) {
     if ($("#remove-button").is(":checked")) {
